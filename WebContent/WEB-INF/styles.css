@@ -1,0 +1,55 @@
+BODY {
+	margin: 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+H1 {
+	font-size: 16px;
+	color: #B34700;
+	width: 100%;
+	border-bottom: 1px solid #333;
+}
+
+#search-form {
+	margin-bottom: 0;
+}
+
+#search-form TABLE {
+	width: 500px;
+	background-color: #FFD9BF;
+}
+
+#search-form TD {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#contacts {
+	margin-top: 20px;
+}
+
+#contacts .contact {
+	border-bottom: 1px solid #f1f1f1;
+	width: 600px;
+}
+
+#contacts .contact TD {
+	font-size: 12px;
+	width: 200px;
+}
+
+.manage-contact-links A {
+	color: #B34700;
+}
+
+INPUT, SELECT, TEXTAREA {
+	border: 1px solid #313131;
+	font-size: 12px;
+}
+
+.button {
+	border: 1px solid #999;
+	background-color: #f1f1f1;
+	color: #000;
+}
