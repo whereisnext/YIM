@@ -9,28 +9,31 @@ import org.apache.wicket.markup.html.panel.Panel;
 
 import com.vance.yim.RootPathUtil;
 
-public class TimeLineComponent extends Panel implements IHeaderContributor{
+public class TimeLineComponent extends Panel{
 	private Component gridComponent;
 	
 	public TimeLineComponent(String id) {
 		super(id);
-		gridComponent = new WebMarkupContainer("grid").setOutputMarkupId(true);
-	    add(gridComponent);
-	}
-
-	private static final long serialVersionUID = 1L;
-
-	@Override
-	protected void onRender() {
+//		gridComponent = new WebMarkupContainer("aaa").setOutputMarkupId(true);
+//	    add(gridComponent);
+		Label label=new Label("timeline");
+		add(label);
 		
 	}
 
+	private static final long serialVersionUID = 1L;
+//
+//	@Override
+//	protected void onRender() {
+//		
+//	}
+//
 	@Override
 	public void renderHead(final IHeaderResponse response) {
-		final String contextPath = RootPathUtil.getRootPath()+""; // dito with servlet api
-		final String localPath="http://localhost:9999/timeline/";
-		response.renderJavaScriptReference(localPath+ "api/timeline-api.js?bundle=true");
-		response.renderJavaScriptReference(localPath+ "api/timeline-api-vance.js");
+//		final String contextPath = RootPathUtil.getRootPath()+""; // dito with servlet api
+//		final String localPath="http://localhost:9999/timeline/";
+//		response.renderJavaScriptReference(localPath+ "api/timeline-api.js?bundle=true");
+//		response.renderJavaScriptReference(localPath+ "api/timeline-api-vance.js");
 		
 	}
 }

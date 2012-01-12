@@ -88,7 +88,7 @@ public class UserTweetsPage extends BasePage {
 				events.add(event);
 			}
 			timeLine.setEvents(events);
-			File outputFile=new File(rootPath+"vance.xml");
+			File outputFile=new File(rootPath+"vancezhao.xml");
 			if(outputFile.exists()){
 				outputFile.delete();
 			}
@@ -100,6 +100,7 @@ public class UserTweetsPage extends BasePage {
 			renderingCharts(mydataValues);
 			renderingDatas(userTweet.getStatus());
 			TimeLineComponent timelineComponent=new TimeLineComponent("timeLine");
+			
 			add(timelineComponent);
 		} catch (JAXBException e) {
 			e.printStackTrace();

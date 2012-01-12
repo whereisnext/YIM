@@ -19,6 +19,7 @@ import com.vance.test.UserProfile;
 import com.vance.token.LinkedInServiceFactory;
 import com.vance.token.TwitterServiceFactory;
 import com.vance.twitter.MyTwitterSession;
+import com.vance.view.timelineComponent.TimeLineComponent;
 import com.vance.yim.UserProfilePage;
 
 
@@ -28,7 +29,9 @@ public class UserLoginPage extends BasePage {
 
 	
 	public UserLoginPage(){
+		TimeLineComponent timelineComponent=new TimeLineComponent("timeLine");
 		
+		add(timelineComponent);
 	}
 	
 	

@@ -1,28 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<title>YIM</title>
+<link rel='stylesheet' href='api/styles.css' type='text/css' />
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style scoped>
-#custom-doc { width: 95%; min-width: 950px; }
-#userTweets {
-    margin:10px 10px 10px 10px;
-    width:90%;
-    max-width: 1000px;;
-    height:1000px;
-}
-</style>
-<title>Insert title here</title>
+<script src="api/timeline-api.js?bundle=true" type="text/javascript"></script>
+
+<script src="examples.js" type="text/javascript"></script>
+
+
+<script type="text/javascript"
+	src="api/timeline-api-vance.js"></script>
+
+
 </head>
-<body>
+<body onload="onLoad();" onresize="onResize();">
 
-<div id="userTweets"></div>
+	<div id="header">
+		<h1>TimeLine Tweets From <a href="http://www.twitter.com">Twitter</a> </h1>
+	</div>
 
-<span id="" wicket:id="timeLine">
- <table wicket:id="grid" style="width:100%;height:200px">
-    </table>
-</span>
+	<div id="content">
 
+		<div id="tl" class="timeline-default" style="height: 300px;"wicket:id="timeLine"></div>
+	</div>
 
 </body>
 </html>
+
