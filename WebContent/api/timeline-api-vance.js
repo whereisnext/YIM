@@ -76,7 +76,7 @@
             }
             
             tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
-            tl.loadXML("http://localhost:8080/YIM/vancezhao.xml", function(xml, url) { eventSource.loadXML(xml, url); });
+            tl.loadXML("http://176.34.61.2:8080/YIM/vancezhao.xml", function(xml, url) { eventSource.loadXML(xml, url); });
             
             setupFilterHighlightControls(document.getElementById("controls"), tl, [0,1], theme);
         }
